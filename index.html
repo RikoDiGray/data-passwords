@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.1">
+        <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <title>Список паролей.</title>
+    </head>
+    <body>
+        <div class="norif-bar">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <span class="active"></span>
+        </div>
+        <div class="notifications">
+            <span class="close-notif">&times;</span>
+            <div class="container--info">
+                <h1>Уведомления</h1>
+                <div class="window-loading">
+                    <strong class="new-item">Новое!</strong>
+                    <span class="date-of-send">12.34.12, 13:32:11</span>
+                    <h4><i class="fa fa-window-restore" aria-hidden="true"></i> Страница</h4>
+                    <hr>
+                    <p>
+                        Страница была успешно загружена. Ошибок не обнаружено.
+                    </p>
+                </div>
+                <div class="base-connect">
+                    <strong class="new-item">Новое!</strong>
+                    <span class="date-of-send">12.34.12, 13:32:11</span>
+                    <h4><i class="fa fa-file-text" aria-hidden="true"></i> База данных</h4>
+                    <hr>
+                    <p>
+                        База данных загружена успешно. Отобразились все пароли и логины.
+                    </p>
+                </div>
+                <div class="error-count">
+                    <strong class="new-item">Новое!</strong>
+                    <span class="date-of-send">12.34.12, 13:32:11</span>
+                    <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Ошибки</h4>
+                    <hr>
+                    <p>
+                        Ошибок не обнаружено, на данный момент ошибок: 0.
+                    </p>
+                </div>
+                <div class="developers-count">
+                    <strong class="new-item">New!</strong>
+                    <span class="date-of-send">12.34.12, 13:32:11</span>
+                    <h4><i class="fa fa-fire" aria-hidden="true"></i> Разработчикам</h4>
+                    <hr>
+                    <p>
+                        Подключены скрипты Ajax: jQuery, 1.
+                        <br>
+                        Подключено пользовательских скриптов: 6.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h1 class="title">Добро пожаловать</h1>
+        <section>
+            <div class="finding-password">
+                <select class="select-type">
+                    <option disabled>Выберите тип</option>
+                    <option name='item' data-id="other" data-index='1' selected>Другой</option>
+                    <option name='item' data-id="steam" data-index='2'>Steam</option>
+                    <option name='item' data-id="vk" data-index='3'>Vk</option>
+                    <option name='item' data-id="mail" data-index='4'>Mail</option>
+                    <option name='item' data-id="telegram" data-index='5'>Telegram</option>
+                </select>
+                <input role="1" placeholder="Поиск..." type="text" class="find" data-item="password">
+                <span class="filter--find"><i class="fa fa-sliders" aria-hidden="true"></i></span>
+                <input role="2" type="button" class="add" value="+" title="Добавить..." data-item="find">
+            </div>
+            <div class="filter-container hidden">
+                <div class="text">
+                    <h4>Тип фильтрации: <i class="find-to-cast">Все</i></h4>
+                </div>
+                <span class="checked-item find-filter active">Все</span>
+                <span class="checked-item find-filter">Vk</span>
+                <span class="checked-item find-filter">Steam</span>
+                <span class="checked-item find-filter">Mail</span>
+            </div>
+        </section>
+        <hr color="#ddd">
+        <h1 class="pass--title">Всего аккаунтов: <span class="pass-length">0</span></h1>
+        <section class="pass-list"></section>
+        <section class="container-added">
+            <div class="container--colApps">
+                <div class="close-item">
+                    <span class="close">&times;</span>
+                </div>
+                <h1 class="title-h1">
+                    Создать <span class="gold-plus">&plus;</span>
+                </h1>
+                <hr class="space">
+                <div class="add-pass">
+                    <input title="Добавить..." type="button" value="+" class="bls added">
+                </div>
+                <div class="checkbox-container">
+                    <h1>Тип данных</h1>
+                    <label>
+                        <input checked name="type" type="radio" class="selected-type other__ type_1">
+                        <span>Другой</span>
+                        <br>
+                    </label>
+                    <label>
+                        <input name="type" type="radio" class="selected-type off type_2">
+                        <span>Steam</span>
+                        <br>
+                    </label>
+                    <label>
+                        <input name="type" type="radio" class="selected-type off type_3">
+                        <span>Vk</span>
+                        <br>
+                    </label>
+                    <label>
+                        <input name="type" type="radio" class="selected-type off type_4">
+                        <span>Mail</span>
+                        <br>
+                    </label>
+                    <label>
+                        <input name="type" type="radio" class="selected-type off type_5">
+                        <span>Telegram</span>
+                        <br>
+                    </label>
+                </div>
+                <div class="values">
+                    <h4>Steam, Vk, Mail, Telegram</h4>
+                    <input required='required' disabled placeholder="Логин" type="text" class="cls login-name" data-status='disabled'>
+                    <input required='required' disabled placeholder="Пароль" type="text" class="cls password-name" data-status='disabled'>
+                </div>
+                <div class="values">
+                    <h4>Другие</h4>
+                    <input required='required' placeholder="Сайт" type="text" class="cls site-name" data-status='enabled'>
+                    <input required='required' placeholder="Логин" type="text" class="cls login-name" data-status='enabled'>
+                    <input required='required' placeholder="Пароль" type="text" class="cls password-name" data-status='enabled'>
+                </div>
+            </div>
+        </section>
+        <script src="back-packet/data-conf.js"></script>
+        <script src="back-packet/config.js"></script>
+        <script src="back-packet/about.js"></script>
+        <script src="back-packet/added-password.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="data/connect.js"></script>
+    </body>
+</html>

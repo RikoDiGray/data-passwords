@@ -1,0 +1,55 @@
+{
+    "data" : [
+        {
+            "date" : "22.11.2020, 18:11:04",
+            "type" : "steam",
+            "title" : "Steam",
+            "login" : "zakazaka2244",
+            "password" : "steam_password"
+        },{
+            "date" : "25.12.2020, 01:09:22",
+            "type" : "steam",
+            "title" : "Steam",
+            "login" : "testSteamacc",
+            "password" : "mypassword"
+        },{
+            "date" : "22.11.2020, 18:11:04",
+            "type" : "vk",
+            "title" : "Vk",
+            "login" : "+1234567890",
+            "password" : "vkkom2222"
+        },{
+            "date" : "22.11.2020, 18:11:04",
+            "type" : "vk",
+            "title" : "Vk",
+            "login" : "+987654321",
+            "password" : "mypassword2vk"
+        },{
+            "date" : "22.11.2020, 18:11:04",
+            "type" : "mail",
+            "title" : "Mail",
+            "login" : "mail@gmail.com",
+            "password" : "mauk"
+        },{
+            "date" : "22.11.2020, 18:11:04",
+            "type" : "mail",
+            "title" : "Mail",
+            "login" : "mymail@email.com",
+            "password" : "mymailpassword"
+        },{
+            "date" : "22.11.2020, 18:11:04",
+            "type" : "other",
+            "title" : "Другой",
+            "login" : "gitter",
+            "password" : "mygithubpassword",
+            "site" : "github.com"
+        },{
+            "date" : "22.11.2020, 18:11:04",
+            "type" : "other",
+            "title" : "Другой",
+            "login" : "yoho2211",
+            "password" : "k4ra",
+            "site" : "animego.com"
+        }
+    ]
+}
