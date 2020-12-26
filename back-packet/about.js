@@ -66,6 +66,7 @@ window.addEventListener("load", ()=>{
         notHaveAccess();
     }
     let init = setTimeout(() => {
-        passCount.textContent = findContainer.length;
+        var f = document.querySelectorAll(".container");
+        passCount.textContent = f.length;
     }, 1000);
 });
