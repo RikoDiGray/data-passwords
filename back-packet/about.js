@@ -67,5 +67,5 @@ window.addEventListener("load", ()=>{
     }
     let init = setTimeout(() => {
         passCount.textContent = findContainer.length;
-    }, 300);
+    }, 1000);
 });
