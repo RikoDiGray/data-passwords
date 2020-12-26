@@ -4,7 +4,8 @@
 Как начать:
 
 1. Откройте сайт на локальном сервере, то есть 127.0.0.1 или аналогичном.
-2. Заходим на сайт.
+2. Заходим на сайт и вводим пароль, стандартный пароль "111". 
+   Сменить можно в back-packet\about.js
 3. Работает!
 
 # RU; Как добавить свои логины, пароли и т. д.
@@ -25,7 +26,8 @@
 How to start:
 
 1. Open the site on the local server, that is 127.0.0.1, or similar.
-2. Go to the site.
+2. We go to the site and enter the password, the standard password is "111". 
+   You can change it in back-packet \ about.js
 3. Check it out!
 
 # EN; How to add your logins, passwords, etc.
