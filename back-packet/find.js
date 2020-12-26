@@ -29,7 +29,7 @@ function start() {
     }
 }
 
-input.addEventListener("input", () => {
+input.addEventListener("keypress", () => {
     filterActive.forEach((k) => {
         k.classList.remove("active");
     });
