@@ -94,7 +94,7 @@ filterActive.forEach((x) => {
             case "Mail":
                     filterSet(z,f);
                     filterText.textContent = "Mail";
-                    passTitle.textContent = `Аккаунтов Steam: ${z.length}`;
+                    passTitle.textContent = `Аккаунтов Mail: ${z.length}`;
                 break;
         }
     }); 
